@@ -47,7 +47,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    position: relative;
+    margin-top: 20px;
 }
 
 button {
@@ -72,7 +72,6 @@ button:hover {
 .no-button {
     background-color: gray;
     color: white;
-    position: absolute;
 }
 
 .final-text {
@@ -83,4 +82,36 @@ button:hover {
 
 .schedule-background, .summary-background {
     background: linear-gradient(135deg, #9575cd, #81d4fa);
+}
+
+.card-form {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1em;
+    color: #4a148c;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #9575cd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.summary-item {
+    font-size: 1.2em;
+    text-align: left;
 }
