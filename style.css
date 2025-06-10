@@ -1,0 +1,74 @@
+
+body {
+    margin: 0;
+    font-family: 'Great Vibes', cursive, Arial, sans-serif;
+    background-color: #fce4ec;
+    color: #4a148c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.love-background {
+    background: linear-gradient(45deg, #b39ddb, #ce93d8);
+    animation: gradientMove 10s infinite alternate;
+}
+
+.schedule-background, .summary-background {
+    background: linear-gradient(135deg, #9575cd, #81d4fa);
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.center-content {
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.main-text {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #7e57c2, #64b5f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.yes-button {
+    background-color: #ec407a;
+    color: white;
+}
+
+.no-button {
+    background-color: gray;
+    color: white;
+    position: absolute;
+}
+
+.final-text {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #d81b60;
+}
