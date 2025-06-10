@@ -11,20 +11,26 @@
 <body class="schedule-background">
     <div class="center-content">
         <h1 class="main-text">Schedule Our First Date</h1>
-        <form id="scheduleForm">
-            <label for="date">Choose a date:</label>
-            <input type="date" id="date" name="date" min="2025-06-01" max="2025-07-31" required>
-            <label for="time">Choose a time:</label>
-            <select id="time" name="time" required>
-                <option value='8:00'>8:00</option><option value='9:00'>9:00</option><option value='10:00'>10:00</option><option value='11:00'>11:00</option><option value='12:00'>12:00</option><option value='13:00'>13:00</option><option value='14:00'>14:00</option><option value='15:00'>15:00</option><option value='16:00'>16:00</option><option value='17:00'>17:00</option><option value='18:00'>18:00</option><option value='19:00'>19:00</option><option value='20:00'>20:00</option><option value='21:00'>21:00</option><option value='22:00'>22:00</option>
-            </select>
-            <label for="activity">Choose an activity:</label>
-            <select id="activity" name="activity" required>
-                <option value="Pizza Date">Pizza Date</option>
-                <option value="Movie Night">Movie Night</option>
-                <option value="Coffee Date">Coffee Date</option>
-                <option value="Walk in the Park">Walk in the Park</option>
-            </select>
+        <form id="scheduleForm" class="card-form">
+            <div class="form-group">
+                <label for="date">Choose a date:</label>
+                <input type="date" id="date" name="date" min="2025-06-01" max="2025-07-31" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Choose a time:</label>
+                <select id="time" name="time" required>
+                    <option value='8:00'>8:00</option><option value='9:00'>9:00</option><option value='10:00'>10:00</option><option value='11:00'>11:00</option><option value='12:00'>12:00</option><option value='13:00'>13:00</option><option value='14:00'>14:00</option><option value='15:00'>15:00</option><option value='16:00'>16:00</option><option value='17:00'>17:00</option><option value='18:00'>18:00</option><option value='19:00'>19:00</option><option value='20:00'>20:00</option><option value='21:00'>21:00</option><option value='22:00'>22:00</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="activity">Choose an activity:</label>
+                <select id="activity" name="activity" required>
+                    <option value="Pizza Date">Pizza Date</option>
+                    <option value="Movie Night">Movie Night</option>
+                    <option value="Coffee Date">Coffee Date</option>
+                    <option value="Walk in the Park">Walk in the Park</option>
+                </select>
+            </div>
             <button type="submit" class="yes-button">Continue to Our Date</button>
         </form>
     </div>
