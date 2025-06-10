@@ -10,7 +10,7 @@ particlesJS('particles-js', {
     "shape": {
       "type": "image",
       "image": {
-        "src": "https://i.imgur.com/JJvJvKW.png",  // HEART PNG estetik & transparan
+        "src": "https://i.imgur.com/aq2EFvm.png",  // HEART PNG estetik & transparan
         "width": 100,
         "height": 100
       }
