@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,12 +13,21 @@
         <p class="summary-item"><strong>Date:</strong> <span id="summaryDate"></span></p>
         <p class="summary-item"><strong>Time:</strong> <span id="summaryTime"></span></p>
         <p class="summary-item"><strong>Activity:</strong> <span id="summaryActivity"></span></p>
-        <p class="final-text">Can't wait to see you!’–</p>
+        <p class="final-text">Can't wait to see you! 💖</p>
     </div>
+
     <script>
-        document.getElementById('summaryDate').innerText = localStorage.getItem('date');
-        document.getElementById('summaryTime').innerText = localStorage.getItem('time');
-        document.getElementById('summaryActivity').innerText = localStorage.getItem('activity');
+        const rawDate = localStorage.getItem('date');
+        const selectedTime = localStorage.getItem('time');
+        const selectedActivity = localStorage.getItem('activity');
+
+        const formattedDate = rawDate ? new Date(rawDate).toLocaleDateString('en-US', {
+            weekday: 'long', year: 'numeric', month: 'short', day: 'numeric'
+        }) : '';
+
+        document.getElementById('summaryDate').innerText = formattedDate;
+        document.getElementById('summaryTime').innerText = selectedTime;
+        document.getElementById('summaryActivity').innerText = selectedActivity;
     </script>
 </body>
 </html>
