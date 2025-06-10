@@ -1,25 +1,52 @@
-
 particlesJS('particles-js', {
   "particles": {
     "number": {
-      "value": 30
+      "value": 35,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
     },
     "shape": {
       "type": "image",
       "image": {
-        "src": "https://cdn-icons-png.flaticon.com/512/833/833472.png",
+        "src": "https://i.imgur.com/JJvJvKW.png",  // HEART PNG estetik & transparan
         "width": 100,
         "height": 100
       }
     },
     "size": {
-      "value": 20
+      "value": 20,
+      "random": true,
+      "anim": {
+        "enable": false
+      }
     },
     "move": {
-      "speed": 2
+      "enable": true,
+      "speed": 1.2,
+      "direction": "bottom",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false
     },
     "opacity": {
-      "value": 0.7
+      "value": 0.8,
+      "random": false
     }
-  }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false
+      },
+      "onclick": {
+        "enable": false
+      },
+      "resize": true
+    }
+  },
+  "retina_detect": true
 });
